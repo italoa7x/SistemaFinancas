@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pnlInvestimentos" prefHeight="639.0" prefWidth="956.0" style="-fx-background-color: #02030A;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.ControllerFinancas">
+   <children>
+      <Label layoutX="391.0" layoutY="24.0" text="Minhas Finanças" textFill="#e7e5e5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="57.0" layoutY="185.0" prefHeight="92.0" prefWidth="845.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="92.0" prefWidth="174.0">
+               <children>
+                  <Label fx:id="lbBalanco" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Balanço Total" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="92.0" prefWidth="169.0">
+               <children>
+                  <Label fx:id="lbRetorno" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Retorno Total" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="168.0">
+               <children>
+                  <Label fx:id="lbLucro" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Lucro Total" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="92.0" prefWidth="181.0">
+               <children>
+                  <Label fx:id="lbInvestido" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total Investido" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="92.0" prefWidth="154.0">
+               <children>
+                  <Label fx:id="lbPendentes" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="59.0" text="Pendentes" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="391.0" layoutY="277.0" prefHeight="92.0" prefWidth="173.0" spacing="50.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="92.0" prefWidth="169.0">
+               <children>
+                  <Label fx:id="lbPercas" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Percas" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <BarChart fx:id="grFinancas" layoutX="99.0" layoutY="356.0" prefHeight="269.0" prefWidth="757.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Valor" prefHeight="228.0" prefWidth="55.0" side="LEFT" upperBound="5000.0" />
+        </yAxis>
+      </BarChart>
+   </children>
+</Pane>

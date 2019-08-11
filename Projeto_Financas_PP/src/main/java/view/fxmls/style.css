@@ -1,0 +1,129 @@
+.button
+{
+-fx-background-color : #05071F;
+-fx-text-fill : #e7e5e5;
+}
+.button:hover{
+-fx-background-color : #10165F;
+}
+.button:pressed
+{
+-fx-background-color : #1620A1;
+}
+
+.text-field{
+-fx-text-fill: lightgray; 
+-fx-font-size: 12px;
+-fx-background-color:#02030A;
+}
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #10165F;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+.tab{
+    -fx-background-color:  #05071F;
+}
+
+.tab-header-background{
+    -fx-background-color:  #02030A;
+}
+
+.tab-label{
+    -fx-text-fill: #e7e5e5;
+    -fx-font-size: 12pt; 
+}
+
+
+.tab-pane{
+   	-fx-tab-min-width:224px;
+  	-fx-tab-max-width:224px;
+  	-fx-tab-min-height:40px;
+  	-fx-tab-max-height:40px;
+}
+
+.settings-tab{
+    -fx-background-color: derive(-fx-primary, 20%);
+}
+
+.settings-tab:selected{
+    -fx-background-color: lightgray;
+}
+
+.settings-tab:selected .tab-label{
+    -fx-text-fill: -lightgray;
+}
+
+.settings-tab .tab-header-background{
+    -fx-background-color: #05071F;
+}
+
+.combo-box .cell{
+    -fx-text-fill: black;
+    -fx-font: 14px "System";
+}
+
+
+.my-list-cell {
+    -fx-text-fill: lightgray;
+    -fx-font: 14px "System";
+    /* No alternate highlighting */
+   /* -fx-background-color:   #02030A;*/
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: gray;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: gray;
+}
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 20px;
+}
+
+.chart-legend-item{
+    -fx-text-fill: lightgray;
+}
+
+.progress-indicator .percentage {
+    -fx-fill: lightgray;
+    -fx-font-size: 14px;
+}
+
+
+
+

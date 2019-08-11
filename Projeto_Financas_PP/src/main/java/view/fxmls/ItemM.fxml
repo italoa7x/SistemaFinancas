@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="956.0" spacing="70.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.ControllerItemM">
+    <children>
+        <Label fx:id="lbNome" prefHeight="20.0" prefWidth="59.0" text="Bolsa" textFill="#b7c3d7">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label fx:id="lbDescricao" prefHeight="20.0" prefWidth="252.0" text="01/01/2000" textFill="#b7c3d7">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+        </Label>
+        <Label fx:id="lbData" prefWidth="80.0" text="01/01/2000" textFill="#b7c3d7">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+        </Label>
+        <Label fx:id="lbValor" prefHeight="20.0" prefWidth="45.0" text="200" textFill="#b7c3d7">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+        </Label>
+      <Label fx:id="lbStatus" layoutX="365.0" layoutY="28.0" prefHeight="20.0" prefWidth="39.0" text="100" textFill="#b7c3d7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btStatus" mnemonicParsing="false" onAction="#lsExcluir" prefHeight="32.0" prefWidth="63.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Excluir">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+   <padding>
+      <Insets left="70.0" />
+   </padding>
+</HBox>
